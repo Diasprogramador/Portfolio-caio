@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caio | Fullstack Developer</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- SEO Meta Tags -->
+    <title>Caio | Desenvolvedor Fullstack | React, Node.js, Next.js</title>
+    <meta name="description" content="Portfólio de Caio, desenvolvedor Fullstack com 3+ anos de experiência em React, Next.js, Node.js, TypeScript e mais. Criando experiências digitais incríveis.">
+    <meta name="keywords" content="Caio, desenvolvedor fullstack, React, Next.js, Node.js, TypeScript, JavaScript, portfolio, web developer, frontend, backend">
+    <meta name="author" content="Caio">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caio-dev.com/">
+    <meta property="og:title" content="Caio | Desenvolvedor Fullstack">
+    <meta property="og:description" content="Portfólio de Caio, desenvolvedor Fullstack com 3+ anos de experiência em React, Next.js, Node.js e mais.">
+    <meta property="og:image" content="caio.jpeg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://caio-dev.com/">
+    <meta name="twitter:title" content="Caio | Desenvolvedor Fullstack">
+    <meta name="twitter:description" content="Portfólio de Caio, desenvolvedor Fullstack com 3+ anos de experiência em React, Next.js, Node.js e mais.">
+    <meta name="twitter:image" content="caio.jpeg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://caio-dev.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="caio.jpeg">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts with display=swap for performance -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Font Awesome with defer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#8b5cf6">
+    <meta name="msapplication-TileColor" content="#8b5cf6">
 </head>
 <body>
     <!-- 3D Canvas Background -->
@@ -98,7 +140,7 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <h3>Desenvolvimento</h3>
-                        <p>17 anos criando soluções web completas, do frontend ao backend</p>
+                        <p>3+ anos criando soluções web completas, do frontend ao backend</p>
                     </div>
                 </div>
                 <div class="about-card" data-animate="fade-up" data-delay="200">
@@ -123,8 +165,8 @@
             <div class="about-text" data-animate="fade-up" data-delay="400">
                 <p>
                     Sou Caio, um desenvolvedor fullstack de 17 anos apaixonado por tecnologia. 
-                    Comecei minha jornada na programação há alguns anos e desde então não parei de aprender. 
-                    Especializado em React, Node.js e banco de dados, busco sempre criar soluções inovadoras 
+                    Comecei minha jornada na programação há 3 anos e desde então não parei de aprender. 
+                    Especializado em React, Next.js, Node.js e banco de dados, busco sempre criar soluções inovadoras 
                     e eficientes. Acredito que a tecnologia tem o poder de transformar vidas.
                 </p>
             </div>
@@ -137,108 +179,195 @@
             <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">&lt;Skills&gt;</span>
                 <h2 class="section-title">Minhas Tecnologias</h2>
+                <p class="section-subtitle">3+ anos de experiência construindo soluções fullstack</p>
             </div>
-            <div class="skills-grid">
-                <div class="skill-item" data-animate="fade-up" data-delay="0">
-                    <div class="skill-3d">
-                        <div class="skill-icon">
-                            <i class="fab fa-html5"></i>
+            
+            <!-- Frontend -->
+            <div class="skills-category" data-animate="fade-up" data-delay="100">
+                <h3 class="category-title"><i class="fas fa-laptop-code"></i> Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                            </div>
                         </div>
-                        <div class="skill-info">
-                            <h4>HTML5</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS3/Sass</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <div class="skill-info">
+                                <h4>TypeScript</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <h4>React/Next.js</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                            <div class="skill-info">
+                                <h4>Vue.js</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                            <div class="skill-info">
+                                <h4>Tailwind/Bootstrap</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="skill-item" data-animate="fade-up" data-delay="50">
-                    <div class="skill-3d">
-                        <div class="skill-icon">
-                            <i class="fab fa-css3-alt"></i>
+            </div>
+
+            <!-- Backend -->
+            <div class="skills-category" data-animate="fade-up" data-delay="200">
+                <h3 class="category-title"><i class="fas fa-server"></i> Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-info">
+                                <h4>Node.js/Express</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                            </div>
                         </div>
-                        <div class="skill-info">
-                            <h4>CSS3</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python/Flask</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>PostgreSQL</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                            <div class="skill-info">
+                                <h4>MongoDB</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="skill-info">
+                                <h4>Redis</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <div class="skill-info">
+                                <h4>GraphQL</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="skill-item" data-animate="fade-up" data-delay="100">
-                    <div class="skill-3d">
-                        <div class="skill-icon">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>JavaScript</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
+            </div>
+
+            <!-- DevOps & Tools -->
+            <div class="skills-category" data-animate="fade-up" data-delay="300">
+                <h3 class="category-title"><i class="fas fa-tools"></i> DevOps & Ferramentas</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <div class="skill-info">
+                                <h4>Docker</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill-item" data-animate="fade-up" data-delay="150">
-                    <div class="skill-3d">
-                        <div class="skill-icon">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>React</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <div class="skill-info">
+                                <h4>AWS</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill-item" data-animate="fade-up" data-delay="200">
-                    <div class="skill-3d">
-                        <div class="skill-icon">
-                            <i class="fab fa-node-js"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Node.js</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Git/GitHub</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill-item" data-animate="fade-up" data-delay="250">
-                    <div class="skill-3d">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>MongoDB</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="65"></div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                            <div class="skill-info">
+                                <h4>Linux/Bash</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill-item" data-animate="fade-up" data-delay="300">
-                    <div class="skill-3d">
-                        <div class="skill-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Python</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="60"></div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fas fa-vial"></i></div>
+                            <div class="skill-info">
+                                <h4>Jest/Cypress</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill-item" data-animate="fade-up" data-delay="350">
-                    <div class="skill-3d">
-                        <div class="skill-icon">
-                            <i class="fab fa-git-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Git</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
+                    <div class="skill-item">
+                        <div class="skill-3d">
+                            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            <div class="skill-info">
+                                <h4>Firebase</h4>
+                                <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
                             </div>
                         </div>
                     </div>
@@ -253,93 +382,316 @@
             <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">&lt;Projetos&gt;</span>
                 <h2 class="section-title">Meus Trabalhos</h2>
+                <p class="section-subtitle">Projetos reais e acadêmicos que desenvolvi</p>
             </div>
             <div class="projects-grid">
-                <div class="project-card" data-animate="fade-up" data-delay="100">
+                <!-- Projeto Fictício: E-commerce -->
+                <div class="project-card featured" data-animate="fade-up" data-delay="100"
+                    data-project='{
+                        "icon": "fas fa-shopping-cart",
+                        "title": "E-commerce Fullstack",
+                        "tags": ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Docker"],
+                        "description": "Plataforma de e-commerce completa desenvolvida com foco em performance e experiência do usuário. O sistema inclui catálogo de produtos, carrinho de compras, checkout seguro via Stripe, sistema de pedidos e painel administrativo para gerenciamento.",
+                        "features": [
+                            "Catálogo de produtos com filtros e busca",
+                            "Carrinho de compras persistente",
+                            "Pagamento seguro via Stripe",
+                            "Sistema de pedidos e tracking",
+                            "Painel admin para gerenciamento",
+                            "Autenticação JWT e autorização",
+                            "API RESTful documentada",
+                            "Deploy com Docker e CI/CD"
+                        ],
+                        "learned": "Aprendi a integrar múltiplas APIs, lidar com pagamentos online, arquitetura de microserviços e boas práticas de segurança em aplicações fullstack."
+                    }'>
                     <div class="project-3d">
                         <div class="project-image">
                             <div class="project-placeholder">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
-                            <div class="project-overlay">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
                         </div>
                         <div class="project-info">
-                            <h3>E-commerce Platform</h3>
-                            <p>Plataforma completa com React, Node.js e MongoDB</p>
+                            <span class="project-badge">Destaque</span>
+                            <h3>E-commerce Fullstack</h3>
+                            <p>Plataforma completa com carrinho, pagamentos via Stripe, painel admin e sistema de pedidos</p>
                             <div class="project-tags">
-                                <span>React</span>
+                                <span>Next.js</span>
                                 <span>Node.js</span>
-                                <span>MongoDB</span>
+                                <span>PostgreSQL</span>
+                                <span>Stripe</span>
+                                <span>Docker</span>
                             </div>
+                            <button class="btn-more">Ver mais <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-animate="fade-up" data-delay="200">
+
+                <!-- Projeto Fictício: Chat -->
+                <div class="project-card featured" data-animate="fade-up" data-delay="150"
+                    data-project='{
+                        "icon": "fas fa-comments",
+                        "title": "Chat em Tempo Real",
+                        "tags": ["Socket.io", "Express", "React", "MongoDB", "Redis"],
+                        "description": "Aplicativo de chat em tempo real construído com WebSockets para comunicação instantânea. Suporta salas privadas e públicas, envio de arquivos, notificações push e histórico de mensagens persistido no banco de dados.",
+                        "features": [
+                            "Mensagens em tempo real com Socket.io",
+                            "Salas privadas e públicas",
+                            "Envio de imagens e arquivos",
+                            "Notificações push",
+                            "Status online dos usuários",
+                            "Histórico de mensagens",
+                            "Emoji picker",
+                            "Compatível com mobile"
+                        ],
+                        "learned": "Dominei WebSockets, programação assíncrona, gerenciamento de estado em tempo real e escalabilidade de aplicações com Redis para cache."
+                    }'>
                     <div class="project-3d">
                         <div class="project-image">
                             <div class="project-placeholder">
                                 <i class="fas fa-comments"></i>
                             </div>
-                            <div class="project-overlay">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
                         </div>
                         <div class="project-info">
+                            <span class="project-badge">Destaque</span>
                             <h3>Chat em Tempo Real</h3>
-                            <p>Aplicativo de chat com WebSockets e Socket.io</p>
+                            <p>App de chat com WebSockets, salas privadas, envio de arquivos e notificações push</p>
                             <div class="project-tags">
                                 <span>Socket.io</span>
                                 <span>Express</span>
                                 <span>React</span>
+                                <span>MongoDB</span>
+                                <span>Redis</span>
                             </div>
+                            <button class="btn-more">Ver mais <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-animate="fade-up" data-delay="300">
+
+                <!-- Projeto Fictício: API -->
+                <div class="project-card featured" data-animate="fade-up" data-delay="200"
+                    data-project='{
+                        "icon": "fas fa-server",
+                        "title": "API RESTful Completa",
+                        "tags": ["Node.js", "Express", "PostgreSQL", "Docker", "Jest"],
+                        "description": "API RESTful robusta e documentada seguindo as melhores práticas do mercado. Inclui autenticação JWT, controle de acesso, rate limiting, testes automatizados e pipeline de CI/CD para deploy contínuo.",
+                        "features": [
+                            "Arquitetura em camadas (MVC)",
+                            "Autenticação e autorização JWT",
+                            "Rate limiting e throttling",
+                            "Documentação com Swagger/OpenAPI",
+                            "Testes automatizados com Jest",
+                            "Migrações de banco de dados",
+                            "CI/CD com GitHub Actions",
+                            "Containerização com Docker"
+                        ],
+                        "learned": "Aprendi sobre arquitetura de APIs, segurança em-backend, testes automatizados, DevOps e boas práticas de documentação de código."
+                    }'>
+                    <div class="project-3d">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-server"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-badge">Destaque</span>
+                            <h3>API RESTful Completa</h3>
+                            <p>API documentada com autenticação JWT, rate limiting, testes automatizados e CI/CD</p>
+                            <div class="project-tags">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                                <span>Jest</span>
+                            </div>
+                            <button class="btn-more">Ver mais <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Real: Ferrorama -->
+                <div class="project-card" data-animate="fade-up" data-delay="250"
+                    data-project='{
+                        "icon": "fas fa-train",
+                        "title": "Ferrorama Interativo",
+                        "tags": ["JavaScript", "Canvas", "HTML5", "CSS3"],
+                        "description": "Maquete digital interativa de um ferrorama desenvolvida como projeto acadêmico. Permite visualizar trens percorrendo trilhos com controle de velocidade e mudança de rotas em tempo real.",
+                        "features": [
+                            "Simulação de trens em movimento",
+                            "Controle de velocidade",
+                            "Mudança de rotas em tempo real",
+                            "Visualização isométrica",
+                            "Animações suaves",
+                            "Interface intuitiva"
+                        ],
+                        "learned": "Desenvolvi habilidades em programação gráfica com Canvas, cálculos matemáticos para movimentação e pensamento lógico para simulações."
+                    }'>
+                    <div class="project-3d">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-train"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Ferrorama Interativo</h3>
+                            <p>Maquete digital interativa com simulação de trens e controle de rotas</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>Canvas</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                            </div>
+                            <button class="btn-more">Ver mais <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Real: Landing Pages -->
+                <div class="project-card" data-animate="fade-up" data-delay="300"
+                    data-project='{
+                        "icon": "fas fa-palette",
+                        "title": "Landing Pages Modernas",
+                        "tags": ["React", "Tailwind", "Next.js"],
+                        "description": "Coleção de landing pages responsivas desenvolvidas para diversos nichos. Cada página foi projetada com foco em conversão, performance e experiência do usuário mobile-first.",
+                        "features": [
+                            "Design moderno e limpo",
+                            "Totalmente responsivo",
+                            "Animações suaves",
+                            "Formulários de contato",
+                            "SEO otimizado",
+                            "Carregamento rápido",
+                            "Integração com analytics"
+                        ],
+                        "learned": "Aprimorei minhas habilidades em CSS moderno, Tailwind CSS, design responsivo e técnicas de conversão (CRO)."
+                    }'>
+                    <div class="project-3d">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Landing Pages Modernas</h3>
+                            <p>Coleção de landing pages responsivas e otimizadas para conversão</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Tailwind</span>
+                                <span>Next.js</span>
+                            </div>
+                            <button class="btn-more">Ver mais <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Real: Portfolio -->
+                <div class="project-card" data-animate="fade-up" data-delay="350"
+                    data-project='{
+                        "icon": "fas fa-user-astronaut",
+                        "title": "Portfolio Pessoal",
+                        "tags": ["HTML5", "CSS3", "Three.js"],
+                        "description": "Portfolio pessoal com design futurista e animações 3D interativas. Utiliza Three.js para criar um fundo com geometrias flutuantes e efeitos visuais modernos.",
+                        "features": [
+                            "Background 3D com Three.js",
+                            "Cursor personalizado",
+                            "Animações de scroll",
+                            "Efeito de digitação",
+                            "Design dark mode",
+                            "Totalmente responsivo",
+                            "Formulário de contato"
+                        ],
+                        "learned": "Explorei WebGL com Three.js, animações CSS avançadas, design moderno e otimização de performance para gráficos 3D."
+                    }'>
+                    <div class="project-3d">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Pessoal</h3>
+                            <p>Portfolio com animações 3D e design moderno</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Three.js</span>
+                            </div>
+                            <button class="btn-more">Ver mais <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Fictício: Task Manager -->
+                <div class="project-card" data-animate="fade-up" data-delay="400"
+                    data-project='{
+                        "icon": "fas fa-tasks",
+                        "title": "Task Manager Pro",
+                        "tags": ["Vue.js", "Firebase", "Tailwind"],
+                        "description": "Gerenciador de tarefas avançado com funcionalidades de colaboração em equipe. Permite criar projetos, atribuir tarefas, acompanhar progresso com dashboards e integrar com ferramentas externas.",
+                        "features": [
+                            "Drag and drop intuitivo",
+                            "Colaboração em equipe",
+                            "Dashboards e métricas",
+                            "Kanban e listas",
+                            "Notificações de prazos",
+                            "Integração com calendário",
+                            "Relatórios de produtividade",
+                            "Modo offline"
+                        ],
+                        "learned": "Aprendi sobre Vue.js avançado, Firebase Firestore, programação reativa e design de interfaces para produtividade."
+                    }'>
                     <div class="project-3d">
                         <div class="project-image">
                             <div class="project-placeholder">
                                 <i class="fas fa-tasks"></i>
                             </div>
-                            <div class="project-overlay">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
                         </div>
                         <div class="project-info">
-                            <h3>Task Manager</h3>
-                            <p>Gerenciador de tarefas com drag and drop</p>
+                            <h3>Task Manager Pro</h3>
+                            <p>Gerenciador de tarefas com drag and drop, equipes e dashboards</p>
                             <div class="project-tags">
                                 <span>Vue.js</span>
                                 <span>Firebase</span>
                                 <span>Tailwind</span>
                             </div>
+                            <button class="btn-more">Ver mais <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-animate="fade-up" data-delay="400">
+
+                <!-- Projeto Fictício: Dashboard -->
+                <div class="project-card" data-animate="fade-up" data-delay="450"
+                    data-project='{
+                        "icon": "fas fa-chart-line",
+                        "title": "Dashboard Analytics",
+                        "tags": ["React", "D3.js", "Node.js", "MongoDB"],
+                        "description": "Painel de analytics completo para visualização e análise de dados. Utiliza gráficos interativos para mostrar métricas de vendas, usuários e performance com exportação de relatórios.",
+                        "features": [
+                            "Gráficos interativos com D3.js",
+                            "Métricas em tempo real",
+                            "Filtros avançados",
+                            "Exportação para PDF/Excel",
+                            "Dashboards personalizáveis",
+                            "Comparativo de períodos",
+                            "KPIs automatizados",
+                            "API para integração"
+                        ],
+                        "learned": "Desenvolvi habilidades em visualização de dados, D3.js, tratamento de grandes volumes de dados e design de dashboards."
+                    }'>
                     <div class="project-3d">
                         <div class="project-image">
                             <div class="project-placeholder">
-                                <i class="fas fa-cloud-sun"></i>
-                            </div>
-                            <div class="project-overlay">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <i class="fas fa-chart-line"></i>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3>Weather App</h3>
-                            <p>App de clima com API e geolocalização</p>
+                            <h3>Dashboard Analytics</h3>
+                            <p>Painel de analytics com gráficos interativos e relatórios em PDF</p>
                             <div class="project-tags">
-                                <span>JavaScript</span>
-                                <span>API</span>
-                                <span>CSS3</span>
+                                <span>React</span>
+                                <span>D3.js</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
                             </div>
+                            <button class="btn-more">Ver mais <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
@@ -422,18 +774,104 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <span class="logo-bracket">&lt;</span>Caio<span class="logo-bracket">/&gt;</span>
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 60L48 52C96 44 192 28 288 24C384 20 480 28 576 40C672 52 768 68 864 72C960 76 1056 68 1152 56C1248 44 1344 28 1392 20L1440 12V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V60Z" fill="#050505"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>Caio<span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p class="footer-description">Desenvolvedor Fullstack apaixonado por criar experiências digitais incríveis e soluções inovadoras.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Diasprogramador" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/caiodias123" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://discord.com/users/caiodevszin" target="_blank" class="social-btn"><i class="fab fa-discord"></i></a>
+                        <a href="https://wa.me/5531972037820" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/caiodevszin" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Tecnologias</h4>
+                    <ul>
+                        <li><a href="#skills">React / Next.js</a></li>
+                        <li><a href="#skills">Node.js / Express</a></li>
+                        <li><a href="#skills">TypeScript</a></li>
+                        <li><a href="#skills">PostgreSQL / MongoDB</a></li>
+                        <li><a href="#skills">Docker / AWS</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:caiogoncalves629@gmail.com">caiogoncalves629@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-discord"></i>
+                            <span>caiodevszin</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Conselheiro Lafaiete, MG</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p class="footer-text">Criado com 💜 por Caio | 2026</p>
-            <div class="footer-wave">
-                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 60L48 52C96 44 192 28 288 24C384 20 480 28 576 40C672 52 768 68 864 72C960 76 1056 68 1152 56C1248 44 1344 28 1392 20L1440 12V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V60Z" fill="#050505"/>
-                </svg>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Caio. Todos os direitos reservados.</p>
+                <p class="footer-credits">Feito com <span class="heart">❤</span> usando muito café</p>
             </div>
         </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <div class="modal-tags" id="modalTags"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3><i class="fas fa-info-circle"></i> Sobre o Projeto</h3>
+                    <p id="modalDescription"></p>
+                </div>
+                <div class="modal-section">
+                    <h3><i class="fas fa-cogs"></i> Funcionalidades</h3>
+                    <ul id="modalFeatures"></ul>
+                </div>
+                <div class="modal-section">
+                    <h3><i class="fas fa-code"></i> Tecnologias Utilizadas</h3>
+                    <div class="modal-tech-list" id="modalTech"></div>
+                </div>
+                <div class="modal-section">
+                    <h3><i class="fas fa-graduation-cap"></i> O que aprendi</h3>
+                    <p id="modalLearned"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
