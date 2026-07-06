@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio | Fullstack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Cursor follower -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="logo">
+            <span class="logo-bracket">&lt;</span>Caio<span class="logo-bracket">/&gt;</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">Sobre</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projetos</a>
+            <a href="#contact" class="nav-link">Contato</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting" data-animate="fade-up">Olá, eu sou</p>
+                <h1 class="hero-name" data-animate="fade-up" data-delay="100">Caio</h1>
+                <h2 class="hero-title" data-animate="fade-up" data-delay="200">
+                    <span class="typed-text"></span>
+                    <span class="cursor-blink">|</span>
+                </h2>
+                <p class="hero-description" data-animate="fade-up" data-delay="300">
+                    Desenvolvedor Fullstack apaixonado por criar experiências digitais incríveis
+                </p>
+                <div class="hero-buttons" data-animate="fade-up" data-delay="400">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Ver Projetos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contato</span>
+                    </a>
+                </div>
+                <div class="hero-social" data-animate="fade-up" data-delay="500">
+                    <a href="https://github.com/Diasprogramador" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/caiodias123" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://discord.com/users/caiodevszin" target="_blank" class="social-link"><i class="fab fa-discord"></i></a>
+                    <a href="https://wa.me/5531972037820" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-animate="fade-left" data-delay="300">
+                <div class="image-wrapper">
+                    <div class="image-border"></div>
+                    <img src="caio.jpeg" alt="Caio - Fullstack Developer">
+                    <div class="image-glitch"></div>
+                </div>
+                <div class="floating-badge">
+                    <span class="badge-icon">💻</span>
+                    <span class="badge-text">Fullstack Dev</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">&lt;Sobre&gt;</span>
+                <h2 class="section-title">Quem sou eu</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-card" data-animate="fade-up" data-delay="100">
+                    <div class="card-3d">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Desenvolvimento</h3>
+                        <p>17 anos criando soluções web completas, do frontend ao backend</p>
+                    </div>
+                </div>
+                <div class="about-card" data-animate="fade-up" data-delay="200">
+                    <div class="card-3d">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Performance</h3>
+                        <p>Otimização e boas práticas para aplicações rápidas e escaláveis</p>
+                    </div>
+                </div>
+                <div class="about-card" data-animate="fade-up" data-delay="300">
+                    <div class="card-3d">
+                        <div class="card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>UI/UX</h3>
+                        <p>Interfaces modernas e intuitivas que encantam os usuários</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text" data-animate="fade-up" data-delay="400">
+                <p>
+                    Sou Caio, um desenvolvedor fullstack de 17 anos apaixonado por tecnologia. 
+                    Comecei minha jornada na programação há alguns anos e desde então não parei de aprender. 
+                    Especializado em React, Node.js e banco de dados, busco sempre criar soluções inovadoras 
+                    e eficientes. Acredito que a tecnologia tem o poder de transformar vidas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">&lt;Skills&gt;</span>
+                <h2 class="section-title">Minhas Tecnologias</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item" data-animate="fade-up" data-delay="0">
+                    <div class="skill-3d">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>HTML5</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item" data-animate="fade-up" data-delay="50">
+                    <div class="skill-3d">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>CSS3</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item" data-animate="fade-up" data-delay="100">
+                    <div class="skill-3d">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item" data-animate="fade-up" data-delay="150">
+                    <div class="skill-3d">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>React</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item" data-animate="fade-up" data-delay="200">
+                    <div class="skill-3d">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Node.js</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item" data-animate="fade-up" data-delay="250">
+                    <div class="skill-3d">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>MongoDB</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item" data-animate="fade-up" data-delay="300">
+                    <div class="skill-3d">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item" data-animate="fade-up" data-delay="350">
+                    <div class="skill-3d">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Git</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">&lt;Projetos&gt;</span>
+                <h2 class="section-title">Meus Trabalhos</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-animate="fade-up" data-delay="100">
+                    <div class="project-3d">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Platform</h3>
+                            <p>Plataforma completa com React, Node.js e MongoDB</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animate="fade-up" data-delay="200">
+                    <div class="project-3d">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Chat em Tempo Real</h3>
+                            <p>Aplicativo de chat com WebSockets e Socket.io</p>
+                            <div class="project-tags">
+                                <span>Socket.io</span>
+                                <span>Express</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animate="fade-up" data-delay="300">
+                    <div class="project-3d">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Manager</h3>
+                            <p>Gerenciador de tarefas com drag and drop</p>
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animate="fade-up" data-delay="400">
+                    <div class="project-3d">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Weather App</h3>
+                            <p>App de clima com API e geolocalização</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">&lt;Contato&gt;</span>
+                <h2 class="section-title">Vamos Conversar</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-animate="fade-up" data-delay="100">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>caiogoncalves629@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Localização</h4>
+                            <p>Conselheiro Lafaiete, MG 🇧🇷</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Discord</h4>
+                            <p>caiodevszin</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/Diasprogramador" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/caiodias123" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/5531972037820" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/caiodevszin" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" data-animate="fade-up" data-delay="200">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Seu Nome</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Seu Email</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Assunto</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">Sua Mensagem</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Enviar Mensagem</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>Caio<span class="logo-bracket">/&gt;</span>
+            </div>
+            <p class="footer-text">Criado com 💜 por Caio | 2026</p>
+            <div class="footer-wave">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 60L48 52C96 44 192 28 288 24C384 20 480 28 576 40C672 52 768 68 864 72C960 76 1056 68 1152 56C1248 44 1344 28 1392 20L1440 12V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V60Z" fill="#050505"/>
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
