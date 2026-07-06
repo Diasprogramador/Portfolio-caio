@@ -403,6 +403,7 @@ body {
     align-items: center;
     gap: 0.5rem;
     animation: bounce 2s infinite;
+    z-index: 10;
 }
 
 .mouse {
@@ -668,7 +669,7 @@ section {
 }
 
 .project-image {
-    height: 200px;
+    height: 220px;
     position: relative;
     overflow: hidden;
 }
@@ -687,6 +688,328 @@ section {
 
 .project-3d:hover .project-placeholder {
     transform: scale(1.1);
+}
+
+/* ===== Project Mockups ===== */
+.project-mockup {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Browser Mockup */
+.mockup-browser {
+    width: 90%;
+    background: #1a1a2e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mockup-dots {
+    display: flex;
+    gap: 6px;
+    padding: 8px 12px;
+    background: #0f0f1a;
+}
+
+.mockup-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.mockup-dots span:nth-child(1) { background: #ff5f57; }
+.mockup-dots span:nth-child(2) { background: #ffbd2e; }
+.mockup-dots span:nth-child(3) { background: #28ca41; }
+
+.mockup-content {
+    padding: 12px;
+}
+
+.mockup-header-bar {
+    height: 8px;
+    width: 60%;
+    background: var(--gradient-1);
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+/* E-commerce Mockup */
+.mockup-products {
+    display: flex;
+    gap: 8px;
+}
+
+.mockup-product-card {
+    flex: 1;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(6, 182, 212, 0.3));
+    border-radius: 6px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.mockup-ecommerce {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+/* Chat Mockup */
+.mockup-chat-layout {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    background: #1a1a2e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mockup-sidebar {
+    width: 60px;
+    background: #0f0f1a;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mockup-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--gradient-1);
+}
+
+.mockup-chat-area {
+    flex: 1;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.mockup-message {
+    height: 20px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.mockup-message.left {
+    width: 50%;
+    background: rgba(139, 92, 246, 0.4);
+    align-self: flex-start;
+}
+
+.mockup-message.right {
+    width: 40%;
+    background: rgba(6, 182, 212, 0.4);
+    align-self: flex-end;
+}
+
+.mockup-chat {
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+}
+
+/* API Mockup */
+.mockup-terminal {
+    width: 85%;
+    background: #0d1117;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mockup-code {
+    padding: 12px;
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+}
+
+.code-line {
+    padding: 4px 0;
+    color: #c9d1d9;
+}
+
+.code-green { color: #3fb950; }
+.code-yellow { color: #d29922; }
+.code-blue { color: #58a6ff; }
+
+.mockup-api {
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+}
+
+/* Train Mockup */
+.mockup-canvas {
+    width: 90%;
+    height: 80%;
+    background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.train-svg {
+    width: 80%;
+    height: auto;
+}
+
+.mockup-train {
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
+}
+
+/* Landing Page Mockup */
+.mockup-hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 15px;
+}
+
+.mockup-text-large {
+    width: 70%;
+    height: 10px;
+    background: var(--gradient-1);
+    border-radius: 4px;
+}
+
+.mockup-text-small {
+    width: 50%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.mockup-btn {
+    width: 80px;
+    height: 24px;
+    background: var(--gradient-1);
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.mockup-landing {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+/* Portfolio Mockup */
+.mockup-3d-scene {
+    width: 90%;
+    height: 80%;
+    background: linear-gradient(135deg, #050505 0%, #1a1a2e 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    perspective: 200px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.mockup-cube {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-1);
+    border-radius: 8px;
+    animation: rotateCube 4s linear infinite;
+    opacity: 0.8;
+}
+
+.mockup-cube.small {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    animation: rotateCube 3s linear infinite reverse;
+}
+
+@keyframes rotateCube {
+    0% { transform: rotateX(0) rotateY(0); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+.mockup-portfolio {
+    background: linear-gradient(135deg, #050505 0%, #1a1a2e 100%);
+}
+
+/* Task Manager Mockup */
+.mockup-kanban {
+    display: flex;
+    gap: 8px;
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+}
+
+.kanban-column {
+    flex: 1;
+    background: rgba(139, 92, 246, 0.1);
+    border-radius: 6px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.kanban-card {
+    height: 25px;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(6, 182, 212, 0.3));
+    border-radius: 4px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.mockup-tasks {
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
+}
+
+/* Dashboard Mockup */
+.mockup-dashboard-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 85%;
+    height: 80%;
+    padding: 10px;
+}
+
+.bar-chart {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    background: rgba(139, 92, 246, 0.05);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.bar {
+    flex: 1;
+    background: var(--gradient-1);
+    border-radius: 4px 4px 0 0;
+    min-height: 10px;
+    opacity: 0.8;
+}
+
+.mockup-stats {
+    display: flex;
+    gap: 8px;
+    height: 35px;
+}
+
+.stat-box {
+    flex: 1;
+    background: rgba(139, 92, 246, 0.15);
+    border-radius: 6px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.mockup-dashboard {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
 }
 
 .project-info {
@@ -1607,7 +1930,7 @@ body {
     }
     
     .project-image {
-        height: 180px;
+        height: 200px;
     }
     
     .project-info {
@@ -1615,13 +1938,21 @@ body {
     }
     
     .about-text {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         padding: 2rem;
     }
     
     .contact-content {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 3rem;
+    }
+    
+    .skills-category {
+        margin-bottom: 3rem;
+    }
+    
+    section {
+        padding: 90px 0;
     }
     
     .contact-form {
