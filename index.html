@@ -51,16 +51,31 @@
     <meta name="msapplication-TileColor" content="#8b5cf6">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-info">
+            <span class="preloader-label">Carregando portfolio</span>
+            <span class="preloader-word">Caio Dias</span>
+        </div>
+        <div class="preloader-count" id="preloaderCount">00</div>
+        <div class="preloader-bar" id="preloaderBar"></div>
+    </div>
+
+    <!-- Grain overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
     <!-- 3D Canvas Background -->
     <canvas id="bg-canvas"></canvas>
-    
+
     <!-- Cursor follower -->
     <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+    <div class="cursor-follower">
+        <span class="cursor-label"></span>
+    </div>
 
     <!-- Navigation -->
     <nav class="nav">
-        <div class="logo">
+        <div class="logo" data-magnetic>
             <span class="logo-bracket">&lt;</span>Caio<span class="logo-bracket">/&gt;</span>
         </div>
         <div class="nav-links">
@@ -75,6 +90,7 @@
             <span></span>
             <span></span>
         </div>
+        <div class="nav-progress" id="navProgress"></div>
     </nav>
 
     <!-- Hero Section -->
@@ -82,7 +98,9 @@
         <div class="hero-content">
             <div class="hero-text">
                 <p class="hero-greeting" data-animate="fade-up">Olá, eu sou</p>
-                <h1 class="hero-name" data-animate="fade-up" data-delay="100">Caio</h1>
+                <h1 class="hero-name" data-animate="fade-up" data-delay="100">
+                    <span class="hero-name-letter">C</span><span class="hero-name-letter" style="--i:1">a</span><span class="hero-name-letter" style="--i:2">i</span><span class="hero-name-letter" style="--i:3">o</span>
+                </h1>
                 <h2 class="hero-title" data-animate="fade-up" data-delay="200">
                     <span class="typed-text"></span>
                     <span class="cursor-blink">|</span>
@@ -91,19 +109,19 @@
                     Desenvolvedor Fullstack apaixonado por criar experiências digitais incríveis
                 </p>
                 <div class="hero-buttons" data-animate="fade-up" data-delay="400">
-                    <a href="#projects" class="btn btn-primary">
+                    <a href="#projects" class="btn btn-primary" data-magnetic data-cursor-grow="Ver">
                         <span>Ver Projetos</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#contact" class="btn btn-secondary">
+                    <a href="#contact" class="btn btn-secondary" data-magnetic>
                         <span>Contato</span>
                     </a>
                 </div>
                 <div class="hero-social" data-animate="fade-up" data-delay="500">
-                    <a href="https://github.com/Diasprogramador" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/caiodias123" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://discord.com/users/caiodevszin" target="_blank" class="social-link"><i class="fab fa-discord"></i></a>
-                    <a href="https://wa.me/5531972037820" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/Diasprogramador" target="_blank" class="social-link" data-magnetic><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/caiodias123" target="_blank" class="social-link" data-magnetic><i class="fab fa-linkedin"></i></a>
+                    <a href="https://discord.com/users/caiodevszin" target="_blank" class="social-link" data-magnetic><i class="fab fa-discord"></i></a>
+                    <a href="https://wa.me/5531972037820" target="_blank" class="social-link" data-magnetic><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="hero-image" data-animate="fade-left" data-delay="300">
@@ -125,6 +143,18 @@
             <p>Scroll Down</p>
         </div>
     </section>
+
+    <!-- Tech Marquee -->
+    <div class="tech-marquee" aria-hidden="true">
+        <div class="tech-marquee-track">
+            <div class="tech-marquee-group">
+                <span>HTML5</span><span class="dot">✳</span><span>TypeScript</span><span class="dot">✳</span><span>React</span><span class="dot">✳</span><span>Next.js</span><span class="dot">✳</span><span>Node.js</span><span class="dot">✳</span><span>PostgreSQL</span><span class="dot">✳</span><span>Docker</span><span class="dot">✳</span><span>Linux</span><span class="dot">✳</span>
+            </div>
+            <div class="tech-marquee-group">
+                <span>HTML5</span><span class="dot">✳</span><span>TypeScript</span><span class="dot">✳</span><span>React</span><span class="dot">✳</span><span>Next.js</span><span class="dot">✳</span><span>Node.js</span><span class="dot">✳</span><span>PostgreSQL</span><span class="dot">✳</span><span>Docker</span><span class="dot">✳</span><span>Linux</span><span class="dot">✳</span>
+            </div>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -386,7 +416,7 @@
             </div>
             <div class="projects-grid">
                 <!-- Projeto Fictício: E-commerce -->
-                <div class="project-card featured" data-animate="fade-up" data-delay="100"
+                <div class="project-card featured" data-animate="fade-up" data-delay="100" data-cursor-grow="Abrir"
                     data-project='{
                         "icon": "fas fa-shopping-cart",
                         "title": "E-commerce Fullstack",
@@ -435,7 +465,7 @@
                 </div>
 
                 <!-- Projeto Fictício: Chat -->
-                <div class="project-card featured" data-animate="fade-up" data-delay="150"
+                <div class="project-card featured" data-animate="fade-up" data-delay="150" data-cursor-grow="Abrir"
                     data-project='{
                         "icon": "fas fa-comments",
                         "title": "Chat em Tempo Real",
@@ -485,7 +515,7 @@
                 </div>
 
                 <!-- Projeto Fictício: API -->
-                <div class="project-card featured" data-animate="fade-up" data-delay="200"
+                <div class="project-card featured" data-animate="fade-up" data-delay="200" data-cursor-grow="Abrir"
                     data-project='{
                         "icon": "fas fa-server",
                         "title": "API RESTful Completa",
@@ -532,7 +562,7 @@
                 </div>
 
                 <!-- Projeto Real: Ferrorama -->
-                <div class="project-card" data-animate="fade-up" data-delay="250"
+                <div class="project-card" data-animate="fade-up" data-delay="250" data-cursor-grow="Abrir"
                     data-project='{
                         "icon": "fas fa-train",
                         "title": "Ferrorama Interativo",
@@ -574,7 +604,7 @@
                 </div>
 
                 <!-- Projeto Real: Landing Pages -->
-                <div class="project-card" data-animate="fade-up" data-delay="300"
+                <div class="project-card" data-animate="fade-up" data-delay="300" data-cursor-grow="Abrir"
                     data-project='{
                         "icon": "fas fa-palette",
                         "title": "Landing Pages Modernas",
@@ -618,7 +648,7 @@
                 </div>
 
                 <!-- Projeto Real: Portfolio -->
-                <div class="project-card" data-animate="fade-up" data-delay="350"
+                <div class="project-card" data-animate="fade-up" data-delay="350" data-cursor-grow="Abrir"
                     data-project='{
                         "icon": "fas fa-user-astronaut",
                         "title": "Portfolio Pessoal",
@@ -656,7 +686,7 @@
                 </div>
 
                 <!-- Projeto Fictício: Task Manager -->
-                <div class="project-card" data-animate="fade-up" data-delay="400"
+                <div class="project-card" data-animate="fade-up" data-delay="400" data-cursor-grow="Abrir"
                     data-project='{
                         "icon": "fas fa-tasks",
                         "title": "Task Manager Pro",
@@ -705,7 +735,7 @@
                 </div>
 
                 <!-- Projeto Fictício: Dashboard -->
-                <div class="project-card" data-animate="fade-up" data-delay="450"
+                <div class="project-card" data-animate="fade-up" data-delay="450" data-cursor-grow="Abrir"
                     data-project='{
                         "icon": "fas fa-chart-line",
                         "title": "Dashboard Analytics",

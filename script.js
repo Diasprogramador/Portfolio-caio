@@ -1,3 +1,31 @@
+// ===== Preloader =====
+(function runPreloader() {
+    const preloader = document.getElementById('preloader');
+    const countEl = document.getElementById('preloaderCount');
+    const barEl = document.getElementById('preloaderBar');
+    const wordEl = preloader ? preloader.querySelector('.preloader-word') : null;
+    if (!preloader) return;
+
+    requestAnimationFrame(() => { if (wordEl) wordEl.classList.add('is-in'); });
+
+    const duration = 1500;
+    const start = performance.now();
+
+    function tick(now) {
+        const k = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - k, 3);
+        if (countEl) countEl.textContent = String(Math.round(eased * 100)).padStart(2, '0');
+        if (barEl) barEl.style.width = (eased * 100).toFixed(1) + '%';
+        if (k < 1) {
+            requestAnimationFrame(tick);
+        } else {
+            preloader.classList.add('is-done');
+            setTimeout(() => { preloader.style.display = 'none'; }, 1200);
+        }
+    }
+    requestAnimationFrame(tick);
+})();
+
 // ===== Three.js 3D Background =====
 const canvas = document.getElementById('bg-canvas');
 const scene = new THREE.Scene();
@@ -137,15 +165,33 @@ if (!isMobile && cursor && cursorFollower) {
     animateCursor();
 
     // Cursor hover effects
-    const hoverElements = document.querySelectorAll('a, button, .btn, .social-link, .social-btn, .project-card, .skill-item, .about-card');
+    const cursorLabel = cursorFollower.querySelector('.cursor-label');
+    const hoverElements = document.querySelectorAll('a, button, .btn, .social-link, .social-btn, .project-card, .skill-item, .about-card, [data-cursor-grow]');
     hoverElements.forEach(el => {
         el.addEventListener('mouseenter', () => {
-            cursorFollower.style.transform = 'translate(-50%, -50%) scale(1.5)';
-            cursorFollower.style.borderColor = 'var(--secondary)';
+            cursorFollower.classList.add('is-grown');
+            const grow = el.closest('[data-cursor-grow]');
+            if (cursorLabel) cursorLabel.textContent = grow ? grow.getAttribute('data-cursor-grow') : '';
         });
         el.addEventListener('mouseleave', () => {
-            cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
-            cursorFollower.style.borderColor = 'var(--primary)';
+            cursorFollower.classList.remove('is-grown');
+            if (cursorLabel) cursorLabel.textContent = '';
+        });
+    });
+}
+
+// ===== Magnetic elements =====
+if (!isMobile) {
+    document.querySelectorAll('[data-magnetic]').forEach(el => {
+        el.addEventListener('mousemove', (e) => {
+            const rect = el.getBoundingClientRect();
+            const dx = (e.clientX - (rect.left + rect.width / 2)) / rect.width;
+            const dy = (e.clientY - (rect.top + rect.height / 2)) / rect.height;
+            const k = 14;
+            el.style.transform = `translate3d(${(dx * k).toFixed(1)}px, ${(dy * k).toFixed(1)}px, 0)`;
+        });
+        el.addEventListener('mouseleave', () => {
+            el.style.transform = 'translate3d(0, 0, 0)';
         });
     });
 }
@@ -209,17 +255,28 @@ animatedElements.forEach(el => observer.observe(el));
 
 // ===== Navigation Scroll Effect =====
 const nav = document.querySelector('.nav');
+const navProgress = document.getElementById('navProgress');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 100) {
         nav.classList.add('scrolled');
     } else {
         nav.classList.remove('scrolled');
     }
-    
+
+    const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+    if (navProgress) navProgress.style.width = ((currentScroll / maxScroll) * 100).toFixed(2) + '%';
+
+    const menuOpen = navLinksContainer.classList.contains('active');
+    if (!menuOpen && currentScroll > 520 && currentScroll > lastScroll) {
+        nav.classList.add('nav-hidden');
+    } else {
+        nav.classList.remove('nav-hidden');
+    }
+
     lastScroll = currentScroll;
 });
 
